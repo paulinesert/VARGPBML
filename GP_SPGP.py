@@ -19,6 +19,7 @@ class GP_SPGP_regression():
         chosen kernel.
         
         Implemented : Radial Basis Function (RBF) kernel 
+        Adapted from: https://towardsdatascience.com/what-on-earth-is-a-gaussian-process-992a6fa2946b
         
         Input
         ------
@@ -37,7 +38,6 @@ class GP_SPGP_regression():
         length = theta[0]
         scale = theta[1]
         sqdist = np.sum(X1**2, 1).reshape(-1, 1) + np.sum(X2**2, 1) - 2 * np.dot(X1, X2.T)
-        #sqdist = cdist(X1, X2, 'euclidean')**2
         return scale**2 * np.exp(-0.5 / length**2 * sqdist)
 
  

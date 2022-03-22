@@ -16,7 +16,8 @@ class GP_regression():
         chosen kernel.
         
         Implemented : Radial Basis Function (RBF) kernel 
-        
+        Adapted from: https://towardsdatascience.com/what-on-earth-is-a-gaussian-process-992a6fa2946b
+
         Input
         ------
         X1: Training samples, Array of shape (n_samples_1, n_features).
