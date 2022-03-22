@@ -4,4 +4,4 @@ Implementation of "Variational Learning of Inducing Variables in Sparse Gaussian
 
 Each GP_{method}.py contains the class of the GP regression method. 
 
-Each compagnon notebook tests on the dataset http://www.gatsby.ucl.ac.uk/~snelson/ using different sizes of training set. 
+Each compagnon notebook tests on the dataset (taken from http://www.gatsby.ucl.ac.uk/~snelson/) using different sizes of training set. 
